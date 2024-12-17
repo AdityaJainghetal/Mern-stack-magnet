@@ -1,0 +1,110 @@
+/* General header styling */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Add space for the search icon inside */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-icon-inside {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+/* .cart-count {
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+} */
+.cart-count {
+  display: inline-block;               
+  background-color: #ff4d4f;          
+  color: white;                        
+  /* font-size: 14px;                     */
+  /* font-weight: 700;                    */
+  padding: 7px 8px;                   
+  border-radius: 20px;                
+  margin-left: 8px;                   
+  line-height: 1;                     
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s ease;  
+}
+
+/* .cart-count:hover {
+  background-color: #e53e3e;         
+  cursor: pointer;                   
+} */
+
+/* Responsive design for screens 375px and below */
+@media screen and (max-width: 375px) {
+  #header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-center {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    font-size: 14px; /* Slightly smaller font for smaller screens */
+  }
+
+  .header-right {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-right a {
+    margin-left: 0;
+  }
+}

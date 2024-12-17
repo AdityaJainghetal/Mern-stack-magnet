@@ -1,0 +1,201 @@
+
+
+
+/* Shop Banner CSS */
+/* ------------------------- */
+.Shopbnr {
+  /* background-image: url('../images/shopb1.jpg'); */
+
+  background-image: url('../images/shopbnr2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  /* margin-top: 40px; */
+  border-radius: 10px;
+  width: 98%;
+  height: 300px;
+  /* margin-top: 20px; */
+  align-content: center;
+  /* text-align: center; */
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.Shopbnr h3,
+.Shopbnr h2 {
+  margin: 0;
+}
+
+
+
+.Shopbnr button {
+  margin-top: 20px;
+  background-color: #ff6347;
+  color: white;
+  font-size: 18px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Shopbnr button:hover {
+  background-color: #e55347;
+}
+
+
+.Shopbnr1 {
+  margin-top: 5px;
+  padding: 0px 20px;
+ 
+
+}
+
+/* Card Data */
+/* --------------------------- */
+
+#cardData{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  
+  
+}
+   
+/* ------------------------------------- */
+.bg{
+
+  background: linear-gradient(to bottom, aliceblue, lightblue, cornflowerblue);
+}
+.main-container {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* width: 1000px; */
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+.main-box {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(244, 140, 140);
+ 
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Transition for both border and zoom */
+}
+
+.main-box:hover {
+  border-color: blue; /* Change border color when hovering */
+  cursor: pointer;    /* Pointer cursor for better UX */
+  transform: scale(0.9); /* Zoom out the image by 10% */
+}
+.img1{
+   background: url('../images/leptop3.jpg') no-repeat;
+  background-size: cover; /* Ensure the image covers the entire container */
+  /* background-color: lightgray; */
+}
+.img2{
+   background: url('../images/iphon1.jpg') no-repeat;
+  background-size: cover; /* Ensure the image covers the entire container */
+  /* background-color: lightgray; */
+}
+.img3{
+   background: url('../images/computer.jpg') no-repeat;
+  background-size: cover; /* Ensure the image covers the entire container */
+  /* background-color: lightgray; */
+}
+.img4{
+   background: url('../images/headphone1.jpg') no-repeat;
+  background-size: cover; /* Ensure the image covers the entire container */
+  /* background-color: lightgray; */
+}
+.img5{
+  background: url('../images/earbuds1.webp') no-repeat;
+ background-size: cover; /* Ensure the image covers the entire container */
+ /* background-color: lightgray; */
+}
+.img6{
+  background: url('../images/smartwatch1.jpg') no-repeat;
+ background-size: cover; /* Ensure the image covers the entire container */
+ /* background-color: lightgray; */
+}
+
+
+.main-container-box-1{
+text-align: center;
+
+}
+
+
+/* Make the carousel responsive for smaller screens (375px) */
+@media (max-width: 375px) {
+  .caro {
+    height: 150px;
+    /* Reduce the height of the image to fit smaller screens */
+    object-fit: cover;
+    /* Ensure the image fills the space without stretching */
+  }
+
+  .carousel-caption {
+    font-size: 12px;
+    /* Reduce the font size for the caption on small screens */
+    bottom: 10px;
+    /* Adjust the position of the caption */
+  }
+
+  .carousel-caption h3 {
+    font-size: 14px;
+    /* Smaller heading size */
+  }
+
+  .carousel-caption p {
+    font-size: 10px;
+    /* Smaller paragraph size */
+  }
+
+  .Shopbnr1 img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+
+/* Zoom effect on product image */
+.product-img-wrapper:hover .zoom-effect {
+  transform: scale(1.1); /* Zoom in effect */
+}
+
+/* Show overlay with product details when hovering over the image */
+.product-img-wrapper:hover .product-overlay {
+  opacity: 1;
+}
+
+/* Styling for the product overlay */
+.product-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Card styling adjustments for responsive design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;  /* Full width on smaller screens */
+    margin-top: 15px;
+  }
+}

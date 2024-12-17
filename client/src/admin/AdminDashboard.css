@@ -1,0 +1,260 @@
+/* #adminHeader {
+    color: brown;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+#adminData {
+    height: 200px;
+    background-color: lightblue;
+}
+
+#adminMenu {
+    width: 20%;
+    background-color: black;
+    color: white;
+}
+#adminContent{
+    padding-left: 30px;
+    width: 80%;
+}
+
+.menucolor {
+    color: whitesmoke;
+
+} */
+
+
+
+
+/* AdminDashboard.css */
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Admin Header */
+#adminHeader {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#adminHeader h4 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Main Container */
+#adminContainer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+/* Admin Menu */
+#adminMenu {
+  background-color: #343a40;
+  color: white;
+  width: 220px;
+  padding-top: 20px;
+}
+
+.menuTitle {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px;
+
+}
+
+.menuLink {
+  display: block;
+  color: #b8c6d3;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  border-left: 4px solid transparent;
+  transition: 0.3s;
+}
+
+.menuLink:hover {
+  background-color: #007bff;
+  color: white;
+  border-left: 4px solid #007bff;
+}
+
+.menuLink.active {
+  background-color: #0056b3;
+  color: white;
+  border-left: 4px solid #0056b3;
+}
+
+/* Admin Content */
+#adminContent {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  border-left: 1px solid #ddd;
+}
+
+#adminContent h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* AdminDashboard.css */
+
+#adminMenu {
+  position: relative;
+}
+
+#closeMenu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#closeMenu:hover {
+  transform: scale(1.2);
+}
+
+#openMenu {
+  background: #004aad;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+#openMenu:hover {
+  background: #0073e6;
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #adminContainer {
+    flex-direction: column;
+  }
+
+  #adminMenu {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #adminContent {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #adminHeader h4 {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+/* --------------------------------------------- */
+
+/* AdminDashboard.css */
+
+/* Header Styling */
+#adminHeader {
+  background-color: #004aad;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger Menu Button */
+#hamburgerMenu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+#hamburgerMenu:hover {
+  transform: scale(1.2);
+}
+
+/* Sidebar Menu */
+#adminContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+#adminMenu {
+  width: 250px;
+  background: linear-gradient(to bottom, #004aad, #0073e6);
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#adminMenu .menuTitle {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 10px;
+}
+
+#adminMenu .menuLink {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+#adminMenu .menuLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* Content Area */
+#adminContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}

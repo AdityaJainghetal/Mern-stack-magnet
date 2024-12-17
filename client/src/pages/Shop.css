@@ -1,0 +1,25 @@
+.shoppage
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+#shopmenu 
+{
+    width: 20%;
+    padding: 30px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+
+    
+}
+#shopData
+{
+    width: 80%;
+    /* border: 2px solid red; */
+    /* margin-bottom: 0px; */
+}
+#cardData
+{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,93 @@
+/* Contact.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('shopbnr3.webp') no-repeat center center/cover;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 20px;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.9); /* Translucent white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .contact-info {
+    color: #333;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .contact-info h1 {
+    color: #fff;
+  }
+  
+  .contact-info p {
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    margin-bottom: 15px;
+  }
+  
+  .info-item h3 {
+    color: #007bff; /* Highlighted color for headings */
+  }
+  
+  .contact-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
