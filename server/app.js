@@ -1,5 +1,5 @@
 const express=require("express")
-const Stripe = require('stripe')
+// const Stripe = require('stripe')
 const app=express();
 const mongoose=require("mongoose");
 const cors=require("cors");
@@ -13,7 +13,7 @@ const userRoute=require("./routes/userRoute")
 require("dotenv").config();
 const PORT=process.env.PORT || 9000
 
-const stripe = Stripe("sk_test_51QWz5HCY7kDIKPcgVNWJpSLxWuKqCQzu1Hm6l9Ejxhj93VhQDCOqA5jSxx2ZyEHbDvlhyZIfuUaWBQsQNAYHFITA00rOxbVnUn")
+// const stripe = Stripe("sk_test_51QWz5HCY7kDIKPcgVNWJpSLxWuKqCQzu1Hm6l9Ejxhj93VhQDCOqA5jSxx2ZyEHbDvlhyZIfuUaWBQsQNAYHFITA00rOxbVnUn")
 
 app.use(cors());
 // Body-parser middleware

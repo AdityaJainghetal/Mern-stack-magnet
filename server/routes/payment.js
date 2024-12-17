@@ -134,11 +134,11 @@
 
 
 const router = require("express").Router();
-const Stripe = require('stripe');
+// const Stripe = require('stripe');
 const crypto = require("crypto");
 
 // Initialize Stripe with your secret key
-const stripe = new Stripe("sk_test_51QWz5HCY7kDIKPcgVNWJpSLxWuKqCQzu1Hm6l9Ejxhj93VhQDCOqA5jSxx2ZyEHbDvlhyZIfuUaWBQsQNAYHFITA00rOxbVnUn");
+// const stripe = new Stripe("sk_test_51QWz5HCY7kDIKPcgVNWJpSLxWuKqCQzu1Hm6l9Ejxhj93VhQDCOqA5jSxx2ZyEHbDvlhyZIfuUaWBQsQNAYHFITA00rOxbVnUn");
 
 // Minimum order amount check (in INR, converted to paise)
 const MIN_ORDER_AMOUNT = 1; // Minimum amount in INR (1 INR = 100 paise)
