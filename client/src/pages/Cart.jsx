@@ -6,7 +6,11 @@ import { FaMinusCircle } from "react-icons/fa";
 import {qntyIncrement, qntyDecrement, dataRemove} from "../cardSlice";
 import { Button } from "antd";
 
+import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
+
 const Cart = () => {
+  const navigate = useNavigate()
 
 
   const myCard= useSelector((state)=>state.mycard.card);
